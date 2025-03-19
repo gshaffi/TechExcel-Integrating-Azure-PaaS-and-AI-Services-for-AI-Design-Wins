@@ -48,6 +48,7 @@ namespace ContosoSuites.Functions
         /// </summary>
         [Function("VectorizeMaintenanceRequests")]
         [CosmosDBOutput(DatabaseName, ContainerName, Connection = "CosmosDBConnection")]
+        
         public object Run([CosmosDBTrigger(
             databaseName: DatabaseName,
             containerName: ContainerName,
